@@ -33,7 +33,11 @@ classifiers = [
 "Bug Tracker" = "https://github.com/smithery-ai/python-sdk/issues"
 
 [tool.setuptools]
-packages = ["smithery"]
+packages = ["smithery", "smithery.server"]
+
+[tool.setuptools.package-dir]
+smithery = "sdk"
+"smithery.server" = "sdk/server"
 
 [tool.setuptools.package-data]
 smithery = ["py.typed"]
